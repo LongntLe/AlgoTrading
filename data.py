@@ -1,2 +1,2 @@
-import pandas as pd
-import 
+from pandas.io.json import json_normalize
+
