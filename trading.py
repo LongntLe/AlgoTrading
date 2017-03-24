@@ -3,6 +3,13 @@
 
 from event import SignalEvent
 
+class movingaverage(object):
+    def __init__(self, instrument, events):
+        self.instrument = instrument
+        self.events = events
+        self.ticks = 0
+        self.invested = False
+
 class TestStrategy(object):
     def __init__(self, instrument, events):
         self.instrument = instrument
