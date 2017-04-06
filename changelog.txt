@@ -6,4 +6,4 @@ Log
 - Fixing download part
 
 Problems:
--
+-Think about how to get data within 5 seconds tick 

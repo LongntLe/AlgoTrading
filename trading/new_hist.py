@@ -1,19 +1,11 @@
-import os
-
-import bs4
-import requests
-
 import json 
 import pandas as pd
 from pandas.io.json import json_normalize
 
 import datetime as dt
-import time
 import v20
 
 import configparser
-
-from datetime import datetime
 
 #new_hist.py
 
@@ -52,9 +44,6 @@ candle = ctx.instrument.candles(
 #translate the data into pandas DataFrame
 data = candle.get('candles')
 data = [cs.dict() for cs in data]
-'''for cs in data:
-	cs.update(cs['ask'])
-	del cs['ask']'''
 
 df = pd.DataFrame(data)
 print(df)
