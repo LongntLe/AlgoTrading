@@ -1,19 +1,9 @@
-import os
-
-import bs4
-import requests
-
-import json 
 import pandas as pd
-from pandas.io.json import json_normalize
 
 import datetime as dt
-import time
 import v20
 
 import configparser
-
-from datetime import datetime
 
 #new_hist.py
 
@@ -36,17 +26,17 @@ r = response.get('instruments')
 
 #dateTime formatting
 suffix = '.000000000Z'
-d1 = dt.datetime(2016,1,1,0,0,0)
+d1 = dt.datetime(2016,8,1,0,0,0)
 d1 = d1.isoformat('T') + suffix
 
-d2 = dt.datetime(2017,1,1,0,0,0)
+d2 = dt.datetime(2016,8,2,0,0,0)
 d2 = d2.isoformat('T') + suffix
 
 candle = ctx.instrument.candles(
 		instrument = 'EUR_USD',
 		fromTime = d1,
 		toTime = d2,
-		granularity = 'H12'
+		granularity = 'S5'
 	)
 
 #translate the data into pandas DataFrame

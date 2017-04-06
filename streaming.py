@@ -32,13 +32,13 @@ class StreamingForexPrices(object):
         for msg_type, msg in response.parts():
             if msg_type == "pricing.Price":
                 #msg = self.on_success(msg.time, msg.asks[0].price)
-                print(msg, "\n", msg_type)
-                #instrument = msg["tick"]["instrument"]
-                #time = msg["tick"]["time"]
-                #bid = msg["tick"]["bid"]
-                #ask = msg["tick"]["ask"]
-                #tev = TickEvent(instrument, time, bid, ask)
-                #self.events_queue.put(tev)
+                print(msg.instrument,msg.time, msg.asks[0].price, msg.bids[0].price)
+                instrument = msg.instrument
+                time = msg.time
+                bid = msg.bids[0]
+                ask = msg.asks[0]
+                tev = TickEvent(instrument, time, bid, ask)
+                self.events_queue.put(tev)
                 
                 #self.ticks += 1
                 #print(self.ticks, end=' ')
@@ -47,3 +47,5 @@ class StreamingForexPrices(object):
                 #self.data.index = pd.DatetimeIndex(self.data["time"])
                 #resam = self.data.resample("1min").last()
                 #print(resam[["ask", "returns", "positions"]].tail())
+            elif msg_type == "pricing.Heartbeat" and args.show_heartbeats:
+                print(msg)

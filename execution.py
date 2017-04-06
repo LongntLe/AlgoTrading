@@ -14,6 +14,10 @@ class Execution(object):
                 datetime_format="RFC3339"
                 )
     def execute_order(self, event):
+        if event.side == 1:
+            pass
+        elif event.side == -1:
+            event.units = -event.units
         request = self.ctx.order.market(
                 self.account_id,
                 instrument=event.instrument,
