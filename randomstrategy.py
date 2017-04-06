@@ -13,9 +13,13 @@ class TestRandomStrategy(object):
         if event.type == "TICK":
             self.ticks += 1
             if self.ticks % 5 == 0:
-                #side = random.choice(["buy", "sell"])
-                side = random.choice(["1", "-1"])
-                order = OrderEvent(
-                        self.instrument, self.units, "market", side
-                        )
+                side = random.choice(["buy", "sell"])
+                if side == "buy":
+                    order = OrderEvent(
+                            self.instrument, self.units, "market", side
+                            )
+                elif side == "sell":
+                    order = OrderEvent(
+                            self.instrument, -self.units, "market", side
+                            )
                 self.events.put(order)
