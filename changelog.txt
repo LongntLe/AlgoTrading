@@ -1,0 +1,9 @@
+Log
+
+04/04/17
+*trading/hist.py
+- Fixing date time to RFC3339 format
+- Fixing download part
+
+Problems:
+-
