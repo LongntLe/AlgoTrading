@@ -29,9 +29,10 @@ Problems:
 - Add a y = 1 line for plot (solved using grid)
 - Need to store data
 - Create a strategy class
-- Create a for loop for repetitive data chunk download
+- Create a for loop for repetitive data chunk download (Solved)
 	- Currently having issues with prices somehow being empty DataFrame
 	- A few trials show that there is nothing wrong with data retrieval, but rather appending dataframe doesn't work
+	- Solved, check here for solution: http://stackoverflow.com/questions/16597265/appending-to-an-empty-data-frame-in-pandas
 
 Homework (Hoang):
 - Read "Master databases for algorithmic trading" by quantstart

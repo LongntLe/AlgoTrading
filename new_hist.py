@@ -57,7 +57,7 @@ for i in range(len(dates)-1):
 		cs.update(cs['ask'])
 		del cs['ask']
 	Kappa = pd.DataFrame(data)
-	prices.append(Kappa)
+	prices = prices.append(Kappa)
 
 #translate the data into dictionary and pandas DataFrame
 
