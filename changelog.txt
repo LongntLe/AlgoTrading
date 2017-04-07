@@ -5,5 +5,18 @@ Log
 - Fixing date time to RFC3339 format
 - Fixing download part
 
+Created new_hist.py
+
 Problems:
--
+- Need to reformat data
+- Try to export to hdf5 format
+
+05/04/17
+Moved new_hist.py to main folder
+
+*new_hist.py
+- Added a mock strategy
+
+Problems:
+- Strategy not working
+
