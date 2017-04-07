@@ -32,7 +32,7 @@ suffix = '.000000000Z'
 d1 = dt.datetime(2016,8,1,0,0,0)
 d1 = d1.isoformat('T') + suffix
 
-d2 = dt.datetime(2016,,1,0,0,0)
+d2 = dt.datetime(2016,9,1,0,0,0)
 d2 = d2.isoformat('T') + suffix
 
 #retrieve Ask price
