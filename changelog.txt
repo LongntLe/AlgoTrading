@@ -20,3 +20,8 @@ Moved new_hist.py to main folder
 Problems:
 - Strategy not working
 
+07/04/17
+*new_hist.py
+- Showing plot
+- Strategy checked and worked
+

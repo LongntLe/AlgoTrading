@@ -6,6 +6,7 @@ import v20
 import configparser
 
 import numpy as np
+import pylab
 
 #new_hist.py
 
@@ -31,7 +32,7 @@ suffix = '.000000000Z'
 d1 = dt.datetime(2016,8,1,0,0,0)
 d1 = d1.isoformat('T') + suffix
 
-d2 = dt.datetime(2016,8,2,0,0,0)
+d2 = dt.datetime(2016,,1,0,0,0)
 d2 = d2.isoformat('T') + suffix
 
 #retrieve Ask price
@@ -81,4 +82,5 @@ for col in cols:
     strats.append(strat)
 
 prices[strats].dropna().cumsum().apply(np.exp).plot()
+pylab.show()
 
