@@ -23,3 +23,4 @@ class TestRandomStrategy(object):
                             self.instrument, -self.units, "market", side
                             )
                 self.events.put(order)
+                #TODO: trim down side, not needed any more.

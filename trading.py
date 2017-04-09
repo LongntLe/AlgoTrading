@@ -5,6 +5,7 @@ import time
 from execution import Execution
 from settings import STREAM_DOMAIN, API_DOMAIN, ACCESS_TOKEN, ACCOUNT_ID
 from randomstrategy import TestRandomStrategy
+from momentum import momentumstrat
 from streaming import StreamingForexPrices
 
 def trade(events, strategy, execution):
@@ -36,7 +37,7 @@ if __name__ == "__main__":
 
     execution = Execution(API_DOMAIN, ACCESS_TOKEN, ACCOUNT_ID)
 
-    strategy = TestRandomStrategy(instrument, units, events)
+    strategy = momentumstrat(instrument, units, events)
 
     trade_thread = threading.Thread(target=trade, args=(events, strategy, execution))
     price_thread = threading.Thread(target=prices.stream_to_queue, args=[])

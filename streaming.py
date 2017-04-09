@@ -32,11 +32,11 @@ class StreamingForexPrices(object):
         for msg_type, msg in response.parts():
             if msg_type == "pricing.Price":
                 #msg = self.on_success(msg.time, msg.asks[0].price)
-                print(msg.instrument,msg.time, msg.asks[0].price, msg.bids[0].price)
+                print(msg.instrument, msg.time, msg.asks[0].price, msg.bids[0].price)
                 instrument = msg.instrument
                 time = msg.time
-                bid = msg.bids[0]
-                ask = msg.asks[0]
+                bid = msg.bids[0].price
+                ask = msg.asks[0].price
                 tev = TickEvent(instrument, time, bid, ask)
                 self.events_queue.put(tev)
                 

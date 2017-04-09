@@ -38,4 +38,13 @@ Homework (Hoang):
 - Read "Master databases for algorithmic trading" by quantstart
 - Read chapter 3 of "Python for Algorithmic Trading"
 
+09/04/17
+added momentum strategy to replace test random strat.
 
+Problems:
+- Need a method to track positions and P&L
+- Need experiments with various momentum timeframes.
+- Crude fix for local var problem. Leaner code might be possible. 
+
+#TODO: scale up to run multiple strategies
+#TODO: multiple currency pairs
