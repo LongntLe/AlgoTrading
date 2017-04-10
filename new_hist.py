@@ -67,8 +67,10 @@ print(prices)
 prices["time"] = pd.to_datetime(prices["time"])
 prices = prices.set_index("time")
 prices.index = pd.DatetimeIndex(prices.index)
-prices.info()
+prices.to_hdf("data.h5", "data", format="table")
 
+#vectorized backtest momentum strategy
+"""
 prices[["c", "l", "h", "o"]] = prices[["c", "l", "h", "o"]].astype("float64")
 prices = prices.rename(columns={"c": "closeAsk", "l":"lowAsk",
                             "h": "highAsk", "o":"openAsk"})
@@ -94,4 +96,4 @@ for col in cols:
 prices[strats].dropna().cumsum().apply(np.exp).plot()
 plt.grid()
 plt.show()
-
+"""
