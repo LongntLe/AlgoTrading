@@ -1,10 +1,12 @@
 #this is for researching financial data, irrelevant to the app
 #source: pp 91 pyalgocourse book
 import pandas as pd
+import oanda
 from sample_data import generate_sample_data
 
-%time data = generate_sample_data(rows = 5e6, cols = 10)
-print data.info()
+def retrieve_data(): #we will create a method to retrieve data
+	pass
+
 
 h5 = pd.HDFStore('data.h5','w') #Storing data into HDF5
 %time = h5['data'] = data
