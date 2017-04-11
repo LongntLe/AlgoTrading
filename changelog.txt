@@ -8,8 +8,8 @@ Log
 Created new_hist.py
 
 Problems:
-- Need to reformat data
-- Try to export to hdf5 format
+- Need to reformat data (solved)
+- Try to export to hdf5 format (solved)
 
 05/04/17
 Moved new_hist.py to main folder
@@ -27,8 +27,8 @@ Problems:
 
 Problems:
 - Add a y = 1 line for plot (solved using grid)
-- Need to store data
-- Create a strategy class
+- Need to store data (solved - hdf5)
+- Create a strategy class (solved 09/04/17)
 - Create a for loop for repetitive data chunk download (Solved)
 	- Currently having issues with prices somehow being empty DataFrame
 	- A few trials show that there is nothing wrong with data retrieval, but rather appending dataframe doesn't work
@@ -62,4 +62,11 @@ Reading assignment (Hoang):
 
 
 
+=======
+add position management: position.py
+add placeholder for portfolio.py
+
+Problems:
+- Need to check with new API for possible changes, particularly "SHORT" side
+#TODO: fill NaN positions (seems not to work - need revised)
 
