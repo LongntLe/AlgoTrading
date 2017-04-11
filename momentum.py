@@ -25,7 +25,7 @@ class momentumstrat(object):
             resam = self.data.resample("5S").last()
             resam["returns"] = np.log(resam["ask"]/resam["ask"].shift(1))
             resam["position"] = np.sign(
-                    resam["returns"].rolling(6).mean()) #TODO: add self.momentum = timeframe
+                    resam["returns"].rolling(6).mean()).dropna() #TODO: add self.momentum = timeframe
             print(resam[["time", "ask", "returns", "position"]].tail())
 
             if resam["position"].ix[-1] == 1:
