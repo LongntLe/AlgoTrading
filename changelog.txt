@@ -48,3 +48,18 @@ Problems:
 
 #TODO: scale up to run multiple strategies
 #TODO: multiple currency pairs
+
+10/04/17
+Some discussions on financial data:
+- Considering AWS or DigitalOcean for data storing
+- Already had steaming.py, so don't have to work on it
+- Might have to consider practical optimization regarding discrepancies between original price and bid/ask price
+
+Begin working on strategies
+Reading assignment (Hoang):
+- https://en.wikipedia.org/wiki/Mathematical_finance
+- Algorithmic Trading Winning Strategies
+
+
+
+
