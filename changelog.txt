@@ -72,3 +72,7 @@ Problems:
 
 16/04/2017
 Wrote a self-reflection about the CME challenge, also propose a working mechanism for the summer interns.
+
+17/04/2017
+Writing mean-reversion strategy. First, we need to figure out how to feed the data into the system.
+
