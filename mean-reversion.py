@@ -24,3 +24,5 @@ class meanrevertstrat(object):
 		pass
 
 	def ADFtest():
+		pass
+

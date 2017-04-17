@@ -74,5 +74,17 @@ Problems:
 Wrote a self-reflection about the CME challenge, also propose a working mechanism for the summer interns.
 
 17/04/2017
-Writing mean-reversion strategy. First, we need to figure out how to feed the data into the system.
+Working on:
+- Update data visualization for new_hist.py using seaborn and potentially bokeh.
+- Writing mean-reversion strategy. First, we need to figure out how to feed the data into the system.
+
+
+*new_hist.py
+Trying out seaborn api for a better data visualization.
+Stuff to try:
+- COLH dataviz
+- Time-series walk
+Some tutorials to look into:
+https://www.oreilly.com/learning/data-visualization-with-seaborn
+http://pbpython.com/visualization-tools-1.html
 
