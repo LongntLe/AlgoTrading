@@ -90,8 +90,11 @@ def visualization_facet(df):
 
 
 def visualization_COLH(df):
+	# We will visualize historical data using COLH format
 	pass
 
+def meanrevertstrat():
+	pass
 
 #vectorized backtest momentum strategy
 """
