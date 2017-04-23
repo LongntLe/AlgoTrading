@@ -106,3 +106,6 @@ Resumed working
 *mean-reversion.py
 Implementing Hurst exponent algorithm
 
+
+23/04/2017
+Done with Hurst, created a Hurst.py so that in the future we can use Hurst test for different strategies
