@@ -67,6 +67,7 @@ add position management: position.py
 add placeholder for portfolio.py
 
 Problems:
+- Bug detected: cannot fill order. Possible reason: no margin left. 
 - Need to check with new API for possible changes, particularly "SHORT" side
 #TODO: fill NaN positions (seems not to work - need revised)
 
