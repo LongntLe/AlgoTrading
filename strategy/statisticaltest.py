@@ -24,12 +24,7 @@ if __name__=="__main__":
     p = log10(cumsum(random.randn(50000)+1)+1000) # trending, hurst ~ 1  
     #p = log10((random.randn(50000))+1000)   # mean reverting, hurst ~ 0  
     #p = log10(cumsum(random.randn(50000))+1000) # random walk, hurst ~ 0.5  
-<<<<<<< HEAD:statisticaltest.py
     print hurst(p) 
 
 def Johansen():
 	pass
-	
-=======
-    print hurst(p)  
->>>>>>> 35eccc5900e7cb480a797b98857b90e00604fa50:strategy/statisticaltest.py
