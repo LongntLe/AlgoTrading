@@ -7,6 +7,7 @@ import configparser
 
 import numpy as np
 import matplotlib.pyplot as plt
+import seaborn as sns
 import pylab
 
 #new_hist.py
@@ -68,6 +69,32 @@ prices["time"] = pd.to_datetime(prices["time"])
 prices = prices.set_index("time")
 prices.index = pd.DatetimeIndex(prices.index)
 prices.to_hdf("data.h5", "data", format="table")
+
+#Testing dataviz configuration
+def visualization_facet(df):
+	# Initialize a grid of plots with an Axes for each walk
+	grid = sns.FacetGrid(df, col="walk", hue="walk", col_wrap=5, size=1.5)
+
+	# Draw a horizontal line to show the starting point
+	grid.map(plt.axhline, y=0, ls=":", c=".5")
+
+	# Draw a line plot to show the trajectory of each random walk
+	grid.map(plt.plot, "step", "position", marker="o", ms=4)
+
+	# Adjust the tick positions and labels
+	grid.set(xticks=np.arange(5), yticks=[-3, 3],
+	         xlim=(-.5, 4.5), ylim=(-3.5, 3.5))
+
+	# Adjust the arrangement of the plots
+	grid.fig.tight_layout(w_pad=1)
+
+
+def visualization_COLH(df):
+	# We will visualize historical data using COLH format
+	pass
+
+def meanrevertstrat():
+	pass
 
 #vectorized backtest momentum strategy
 """

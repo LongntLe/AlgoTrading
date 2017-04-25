@@ -71,3 +71,45 @@ Problems:
 - Need to check with new API for possible changes, particularly "SHORT" side
 #TODO: fill NaN positions (seems not to work - need revised)
 
+16/04/2017
+Wrote a self-reflection about the CME challenge, also propose a working mechanism for the summer interns.
+
+17/04/2017
+Working on:
+- Update data visualization for new_hist.py using seaborn and potentially bokeh.
+- Writing mean-reversion strategy. First, we need to figure out how to feed the data into the system.
+
+*On data visualization:
+Some tutorials to look into
+https://www.oreilly.com/learning/data-visualization-with-seaborn
+http://pbpython.com/visualization-tools-1.html
+
+Also, besides seaborn, there bokeh and matplotlib as potential libraries. Some evaluations:
+- Matplotlib is for basic plotting -- bars, pies, lines, scatter plots, etc.
+
+- Seaborn is for statistical visualization -- use it if you're creating heatmaps or somehow summarizing your data and still want to show the distribution of your data
+
+- Bokeh is for interactive visualization -- if your data is so complex (or you haven't yet found the "message" in your data), then use Bokeh to create interactive visualizations that will allow your viewers to explore the data themselves
+
+*new_hist.py
+Trying out seaborn api for a better data visualization.
+Stuff to try:
+- COLH dataviz
+- Time-series walk
+- Growth visualization
+
+
+*mean-reversion.py
+First trying to understand the structure, it involves event.py, streaming.py and trading.py
+
+22/04/2017
+Resumed working
+*mean-reversion.py
+Implementing Hurst exponent algorithm
+
+
+23/04/2017
+Done with Hurst, created a Hurst.py so that in the future we can use Hurst test for different strategies
+Some helpful links:
+https://www.quantopian.com/posts/hurst-exponent
+https://www.quantopian.com/posts/some-code-from-ernie-chans-new-book-implemented-in-python
