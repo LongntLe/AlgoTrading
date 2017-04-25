@@ -113,3 +113,8 @@ Done with Hurst, created a Hurst.py so that in the future we can use Hurst test 
 Some helpful links:
 https://www.quantopian.com/posts/hurst-exponent
 https://www.quantopian.com/posts/some-code-from-ernie-chans-new-book-implemented-in-python
+=======
+
+16/04/2017
+Writing self-reflection report for CME challenge and propose intern program. Sees Working Mechanism document.
+
