@@ -113,3 +113,7 @@ Done with Hurst, created a Hurst.py so that in the future we can use Hurst test 
 Some helpful links:
 https://www.quantopian.com/posts/hurst-exponent
 https://www.quantopian.com/posts/some-code-from-ernie-chans-new-book-implemented-in-python
+
+24/04/2017
+Reorganize GitHub into folders for easy future reference. 
+#TODO: change import in major .py programs to reflect new changes. 

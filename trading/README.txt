@@ -1,1 +1,0 @@
-Trading system. Influenced by QSTrader by Michael Halls-Moore and system design by Turing Finance and Rishi Narang. Updated using the new REST-API of Oanda and allow for machine learning-oriented approach. 
