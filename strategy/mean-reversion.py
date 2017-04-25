@@ -22,7 +22,7 @@ class meanrevertstrat(object):
         self.ticks = 0
         self.data = pd.DataFrame()
 
-	def calculate(self, event):
+	def calculate_signals(self, event):
 		lookback = 20 # look back period length
 		self.position = 0
 		if event.type == "TICK":
@@ -33,3 +33,9 @@ class meanrevertstrat(object):
             resam["returns"] = np.log(resam["ask"]/resam["ask"].shift(1))
 		
 		pass
+
+	def linearMR():
+		lookback = halflife # The look-back for the moving average and standard deviation can be set to equal the half-life.
+		pass
+
+	
