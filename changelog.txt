@@ -116,4 +116,11 @@ https://www.quantopian.com/posts/some-code-from-ernie-chans-new-book-implemented
 
 24/04/2017
 Reorganize GitHub into folders for easy future reference. 
-#TODO: change import in major .py programs to reflect new changes. 
+#TODO: 
+- change import in major .py programs to reflect new changes. 
+- create a readme for statistical tests for instructions.
+
+25/04/2017
+*statisticaltest.py
+Implementing Johansen test, ADF and CADF test
+

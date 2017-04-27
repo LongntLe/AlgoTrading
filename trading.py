@@ -4,8 +4,8 @@ import time
 
 from execution import Execution
 from settings import STREAM_DOMAIN, API_DOMAIN, ACCESS_TOKEN, ACCOUNT_ID
-from randomstrategy import TestRandomStrategy
-from momentum import momentumstrat
+from strategy.randomstrategy import TestRandomStrategy
+from strategy.momentum import momentumstrat
 from streaming import StreamingForexPrices
 
 def trade(events, strategy, execution):
