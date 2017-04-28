@@ -14,6 +14,8 @@ class StreamingForexPrices(object):
         self.account_id = account_id
         self.instruments = instruments
         self.events_queue = events_queue
+        self.cur_bid = None
+        self.cur_ask = None
         self.ctx_stream = v20.Context(
                 self.domain,
                 443,
@@ -39,7 +41,8 @@ class StreamingForexPrices(object):
                 ask = msg.asks[0].price
                 tev = TickEvent(instrument, time, bid, ask)
                 self.events_queue.put(tev)
-                
+                self.cur_bid = bid
+                self.cur_ask = ask
                 #self.ticks += 1
                 #print(self.ticks, end=' ')
                 #self.data = self.data.append(

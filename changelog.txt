@@ -30,7 +30,8 @@ Problems:
 - Need to store data (solved - hdf5)
 - Create a strategy class (solved 09/04/17)
 - Create a for loop for repetitive data chunk download (Solved)
-	- Currently having issues with prices somehow being empty DataFrame
+	- Currently having issues with prices somehow being empty
+	DataFrame(solved - dataframe actually worked as shown)
 	- A few trials show that there is nothing wrong with data retrieval, but rather appending dataframe doesn't work
 	- Solved, check here for solution: http://stackoverflow.com/questions/16597265/appending-to-an-empty-data-frame-in-pandas
 
@@ -117,3 +118,9 @@ https://www.quantopian.com/posts/some-code-from-ernie-chans-new-book-implemented
 24/04/2017
 Reorganize GitHub into folders for easy future reference. 
 #TODO: change import in major .py programs to reflect new changes. 
+
+27/04/2017
+Implement portfolio management
+Problem:
+- BEWARE: Not tested with all cases. UNSTABLE. But provide a good framework
+regardless for future strategies. 
