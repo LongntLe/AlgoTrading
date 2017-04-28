@@ -1,15 +1,7 @@
 #statistical test
 #R/S test
 import matplotlib.pyplot as py  
-from numpy import *
-import statsmodels.tsa.stattools as ts
-
-'''
-    in statsmodels, we have the following tests:
-    - ADF
-
-'''
-
+from numpy import *  
 def hurst(p):  
     tau = []; lagvec = []  
     #  Step through the different lags  
@@ -27,19 +19,13 @@ def hurst(p):
     # plot lag vs variance  
     #py.plot(lagvec,tau,'o'); show()  
     return hurst  
-
-def test_hurst():
-    if __name__=="__main__":  
-        #  Different types of time series for testing  
-        p = log10(cumsum(random.randn(50000)+1)+1000) # trending, hurst ~ 1  
-        #p = log10((random.randn(50000))+1000)   # mean reverting, hurst ~ 0  
-        #p = log10(cumsum(random.randn(50000))+1000) # random walk, hurst ~ 0.5  
-        print hurst(p) 
-
-def CADF():
-
-    pass
+if __name__=="__main__":  
+    #  Different types of time series for testing  
+    p = log10(cumsum(random.randn(50000)+1)+1000) # trending, hurst ~ 1  
+    #p = log10((random.randn(50000))+1000)   # mean reverting, hurst ~ 0  
+    #p = log10(cumsum(random.randn(50000))+1000) # random walk, hurst ~ 0.5  
+    print hurst(p) 
 
 def Johansen():
-
 	pass
+	

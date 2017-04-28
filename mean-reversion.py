@@ -9,10 +9,9 @@ To do:
 	- How to take different ticks
 		- calculate hurst as test first, can get historical data
 	- How ADF tests
-
+	-
 
 '''
-tick_distance = "5S"
 
 class meanrevertstrat(object):
 	def __init__():
@@ -22,20 +21,9 @@ class meanrevertstrat(object):
         self.ticks = 0
         self.data = pd.DataFrame()
 
-	def calculate_signals(self, event):
+	def calculate(self, event):
 		lookback = 20 # look back period length
 		self.position = 0
 		if event.type == "TICK":
             self.ticks += 1
-            self.data = self.data.append(
-                    pd.DataFrame({"ticks": [self.ticks], "time": [event.time], "ask": [event.ask]}))
-           	resam = self.data.resample(tick_distance).last()
-            resam["returns"] = np.log(resam["ask"]/resam["ask"].shift(1))
-		
 		pass
-
-	def linearMR():
-		lookback = halflife # The look-back for the moving average and standard deviation can be set to equal the half-life.
-		pass
-
-	
