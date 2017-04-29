@@ -132,3 +132,5 @@ Problem:
 - BEWARE: Not tested with all cases. UNSTABLE. But provide a good framework
 regardless for future strategies. 
 
+28/04/2017
+update position.py using Decimal
